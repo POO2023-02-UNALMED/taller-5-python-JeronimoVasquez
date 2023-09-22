@@ -15,7 +15,7 @@ class Animal():
         Reptiles: {Reptil.cantidadReptiles()}\nPeces: {Pez.cantidadPeces()}\nAnfibios: {Anfibio.cantidadAnfibios()}"""
     
         
-    def __str__(self):
+    def toString(self):
         if self.getZona != None:
             return f"""Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}
             , habito en {self.getHabitat()} y mi genero es {self.getGenero()}, la zona en
