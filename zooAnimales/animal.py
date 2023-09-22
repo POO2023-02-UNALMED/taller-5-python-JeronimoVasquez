@@ -11,7 +11,7 @@ class Animal():
         self._zona = None
     
     @classmethod  
-    def totalPorTipo(self):
+    def totalPorTipo(cls):
         return f"""Mamiferos: {Mamifero.cantidadMamiferos()}\nAves: {Ave.cantidadAves()}\n
         Reptiles: {Reptil.cantidadReptiles()}\nPeces: {Pez.cantidadPeces()}\nAnfibios: {Anfibio.cantidadAnfibios()}"""
     
@@ -24,8 +24,7 @@ class Animal():
         
         else:
 
-            return f"""Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}
-            , habito en {self.getHabitat()} y mi genero es {self.getGenero()}"""
+            return f"""Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"""
     
     def getNombre(self):
         return self._nombre
