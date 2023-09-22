@@ -1,8 +1,4 @@
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
 from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
 class Animal():
 
     _totalanimales = 0
@@ -13,6 +9,7 @@ class Animal():
         self._habitat = habitat
         self._genero = genero
         self._zona = None
+    
     @classmethod  
     def totalPorTipo(self):
         return f"""Mamiferos: {Mamifero.cantidadMamiferos()}\nAves: {Ave.cantidadAves()}\n
@@ -20,7 +17,7 @@ class Animal():
     
         
     def toString(self):
-        if self.getZona != None:
+        if self.getZona() != None:
             return f"""Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}
             , habito en {self.getHabitat()} y mi genero es {self.getGenero()}, la zona en
             la que me ubico es {self.getZona()}, en el {self.getZona().getZoo()}"""
