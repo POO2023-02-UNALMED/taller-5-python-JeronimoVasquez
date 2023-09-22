@@ -1,4 +1,4 @@
-from zooAnimales.mamifero import Mamifero
+
 class Animal():
 
     _totalanimales = 0
